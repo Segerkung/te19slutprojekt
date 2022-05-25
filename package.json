@@ -6,6 +6,11 @@
     "start": "node ./bin/www",
     "dev": "nodemon -e js,html,njk ./bin/www"
   },
+
+    "engines": {
+      "node": "~14"
+
+  },
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cookie-parser": "~1.4.4",
