@@ -8,9 +8,10 @@ Vecka 2: Fortsätter med figma och ska ha gjort den klart till på fredag. Behö
 
 Vecka 3: Lektion 1: Sjuk. Lektion 2, Börja koda och göra en databas som jag kan använda till min log in. laddat hem det mesta tror jag men ska dubbelkolla det nästa lektion på fredagen och sedan jobba efter det. Fixade sedan routes på fredagen.
 
-Vecka 4: Måndag: Sjuk. Onsdag: Fixa de routes jag behöver och försöker bara få mer förståelse över koden i helhet. 
+Vecka 4: Måndag: Sjuk. Onsdag: Fixa de routes jag behöver och försöker bara få mer förståelse över koden i helhet. Det gick bra utan några större problem.
+
+Vecka 5: Måndag: 
 
 
 
 
-Select leoseg_songs.*, users.name. From table
