@@ -4,15 +4,15 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var sassMiddleware = require('node-sass-middleware');
-var nunjucks = require('nunjucks')
+const nunjucks = require('nunjucks')
+const session = require('express-session');
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require ('./routes/login');
 var secretRouter = require('./routes/secret');
 var deniedRouter = require ('./routes/denied');
-
-
 
 var app = express();
 
@@ -31,15 +31,20 @@ app.use(sassMiddleware({
   indentedSyntax: false, // true = .sass and false = .scss
   sourceMap: true
 }));
+
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+  secret: 'hemlig',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { sameSite: true }
+}))
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/login', loginRouter);
 app.use('/denied', deniedRouter);
 app.use('/secret', secretRouter);
-
-
 
 
 module.exports = app;

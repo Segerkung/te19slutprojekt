@@ -21,7 +21,8 @@
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
     "node-sass-middleware": "^0.11.0",
-    "nunjucks": "^3.2.3"
+    "nunjucks": "^3.2.3",
+    "session": "^0.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
