@@ -8,6 +8,11 @@ var nunjucks = require('nunjucks')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var loginRouter = require ('./routes/login');
+var secretRouter = require('./routes/secret');
+var deniedRouter = require ('./routes/denied');
+
+
 
 var app = express();
 
