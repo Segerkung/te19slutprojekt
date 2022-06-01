@@ -8,9 +8,11 @@ Vecka 2: Fortsätter med figma och ska ha gjort den klart till på fredag. Behö
 
 Vecka 3: Lektion 1: Sjuk. Lektion 2, Börja koda och göra en databas som jag kan använda till min log in. laddat hem det mesta tror jag men ska dubbelkolla det nästa lektion på fredagen och sedan jobba efter det. Fixade sedan routes på fredagen.
 
-Vecka 4: Måndag: Sjuk. Onsdag: Fixa de routes jag behöver och försöker bara få mer förståelse över koden i helhet. Det gick bra utan några större problem.
+Vecka 4: Måndag: Sjuk. Onsdag: Fixa de routes jag behöver och försöker bara få mer förståelse över koden i helhet. Det gick bra utan några större problem. Fixade också hosting till heroku.
 
-Vecka 5: Måndag: 
+Vecka 5: Måndag: Började på min dokumentation (post mortem). Lite seg start men annars gick det bra. Onsdag: fixade mina routes och GET, samt småfixar som brickade min kod.
+
+Vecka 6: 
 
 
 

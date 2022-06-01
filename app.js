@@ -13,7 +13,7 @@ var usersRouter = require('./routes/users');
 var loginRouter = require ('./routes/login');
 var secretRouter = require('./routes/secret');
 var deniedRouter = require ('./routes/denied');
-
+var signupRouter = require ('./routes/signup');
 var app = express();
 
 nunjucks.configure('views', {
@@ -45,6 +45,7 @@ app.use('/users', usersRouter);
 app.use('/login', loginRouter);
 app.use('/denied', deniedRouter);
 app.use('/secret', secretRouter);
+app.use('/signup', signupRouter);
 
 
 module.exports = app;
