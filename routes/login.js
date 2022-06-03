@@ -12,13 +12,13 @@ router.get('/', function (req, res, next) {
   res.render('login.njk', data);
 });
 
-router.post('/', async (req, res, next) => {
+router.post('/login', async (req, res, next) => {
   // { "song": "koda post" }
       const username = req.body.name;
       const password = req.body.password;
 
       await pool.promise()
-          .query('select * FROM user WHERE name = ?', [username])
+          .query('select * FROM leoseg_login WHERE user = ?', [username])
           .then(([rows, fields]) => {
             if (rows.length === 0) {
               return res.send('Failed to login');
@@ -45,9 +45,6 @@ router.post('/', async (req, res, next) => {
               })
           });
   
-
-
-
   // res.json(req.body);
 
 });
