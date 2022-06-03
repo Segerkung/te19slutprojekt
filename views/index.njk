@@ -1,4 +1,16 @@
-{% extends "layout.njk" %}
-{% block  content %}
-{{ title }}
-{% endblock %}
+{% extends 'layout.njk' %}
+{% block content%}
+{% include 'components/nav.njk' %}
+<main class="container">
+
+<div class="content">
+    <h1>Sign in to see
+        <span>songs</span>
+    </h1>
+    <ul>
+        <li><a href="/login"><button class="Signin-songs">Sign in</button></a></li>
+        <li><a class="signup-index" href="/signup">Don't have an account? Sign up</a></li>
+    </ul>
+</div>
+</main>
+{% endblock%}

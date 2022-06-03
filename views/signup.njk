@@ -1,0 +1,32 @@
+{% extends layout %}
+{% block content %}
+  <main class="container">
+    <form method='post' action="/signup/">
+      <div class="login">
+        <label for="Username" class="form-label">Username</label>
+        <div class="input-group mb-4">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control rounded-0 p-2"
+            placeholder="Username..."
+            aria-label="Username"
+            aria-describedby="basic-addon1">
+        </div>
+          <label for="Password" class="form-label">Password</label>
+        <div class="input-group mb-4">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control rounded-0 p-2"
+            placeholder="Password..."
+            aria-label="Password"
+            aria-describedby="basic-addon2">
+        </div>
+        
+        <button type="submit" class="signin-btn">Sign up</button>
+      </form>
+    </main>
+{% endblock %}
