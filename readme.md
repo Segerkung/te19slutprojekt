@@ -1,6 +1,6 @@
 ## PLANERING ##
 
-Göra en inloggning som vi gjorde med meeps och sedan jobba på det är min plan
+Göra en inloggning som vi gjorde med meeps och sedan jobba på det är min plan kortfattat.
 
 vecka 1: Hann inte med mycket pga strul med wsl samt funderat på vad jag ska göra. Har börjat jobba i figma i hur min sida ska se ut och sedan ska jag börja koda efter det då den är klar.
 
