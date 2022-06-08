@@ -24,7 +24,7 @@ router.get('/', async (req, res, next) => {
         });
 });
 
-router.post('/', async (req, res, next) => {
+ router.post('/', async (req, res, next) => {
     const song = req.body.song;
 
     await pool.promise()
@@ -49,6 +49,7 @@ router.post('/', async (req, res, next) => {
         })
     });
 });
+
 
 router.get('/:id/delete', async (req,res,next) => {
     const id = req.params.id;
