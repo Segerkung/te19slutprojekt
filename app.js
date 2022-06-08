@@ -11,9 +11,10 @@ const session = require('express-session');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require ('./routes/login');
-var secretRouter = require('./routes/secret');
-var deniedRouter = require ('./routes/denied');
+// var secretRouter = require ('./routes/secret');
 var signupRouter = require ('./routes/signup');
+var profileRouter = require ('./routes/profile');
+
 var app = express();
 
 nunjucks.configure('views', {
@@ -43,9 +44,10 @@ app.use(session({
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/login', loginRouter);
-app.use('/denied', deniedRouter);
-app.use('/secret', secretRouter);
-app.use('/signup', signupRouter);
+// app.use('/secret', secretRouter);  
+app.use('/signup', signupRouter); 
+app.use('/profile', profileRouter); 
+
 
 
 module.exports = app;

@@ -10,9 +10,9 @@ Vecka 3: Lektion 1: Sjuk. Lektion 2, Börja koda och göra en databas som jag ka
 
 Vecka 4: Måndag: Sjuk. Onsdag: Fixa de routes jag behöver och försöker bara få mer förståelse över koden i helhet. Det gick bra utan några större problem. Fixade också hosting till heroku.
 
-Vecka 5: Måndag: Började på min dokumentation (post mortem). Lite seg start men annars gick det bra. Onsdag: fixade mina routes och GET, samt småfixar som brickade min kod.
+Vecka 5: Måndag: Började på min dokumentation (post mortem). Lite seg start men annars gick det bra. Onsdag: fixade mina routes och GET, samt småfixar som brickade min kod, jobbade också på detta lektionen efter.
 
-Vecka 6: 
+Vecka 6: Måndag: Fixade klart mina routes ish. För någon anledning funkade inte sign up och fick inte ett fungerande konto, så felsökte. Onsdag: Samma problem, och fixade det på min localhost men tyvärr inte på heroku.  Fredag: Gjorde klart min webbserver kod förutom min hemliga sida, som strular för nuvarande. Felsökte problemet som också bara hände på heroku med log in och sign up. 
 
 
 

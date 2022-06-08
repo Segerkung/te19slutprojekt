@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var session = require('express-session');
 const pool = require('../database');
 const bcrypt = require('bcrypt');
 
@@ -23,13 +24,14 @@ router.post('/login', async (req, res, next) => {
             if (rows.length === 0) {
               return res.send('Failed to login');
             }
-            console.log(rows[0]);
+       //     console.log(rows[0]);
             bcrypt.compare(password, rows[0].password, function(err,result) {
               console.log(result);
               if (result) {
                 req.session.username = username;
                 req.session.user_id = rows[0].id;
-                return res.redirect('/secret');
+                console.log(req.session.user_id);
+                return res.redirect('/profile');
               } else {
                 return res.send('Failed to login');
               }
