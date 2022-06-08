@@ -2,15 +2,13 @@
 {% block  content %}
     <main class="form-signin">
         <form action="/signup/signup" method="post">
-            <div class="wrapper fadeInDown">
-                <div id="formContent">
-                    <div class="fadeIn first">
-                    </div>
-                    <form>
-                        <input type="text" id="login" class="fadeIn second" name="user" placeholder="Username">
-                        <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
-                        <input type="submit" class="fadeIn fourth" value="Log In">
-                    </form>
+            <div class="input-group mb-3">
+             <input type="text" id="name" name="name" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+                 <div class="input-group mb-3">
+                  <input type="password" id="password" name="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                     </div>
+                        <button type="submit" class="btn btn-primary btn-sm">Sign up</button>   
                     <div id="formFooter">
                     </div>
                 </div>
