@@ -1,9 +1,11 @@
 {% extends 'layout.njk' %}
 {% block  content %}
+{% include "components/nav.njk" %}
+
     <main class="form-signin">
         <form action="/signup/signup" method="post">
             <div class="input-group mb-3">
-             <input type="text" id="name" name="name" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+             <input type="text" id="user" name="user" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
               </div>
                  <div class="input-group mb-3">
                   <input type="password" id="password" name="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">

@@ -3,21 +3,21 @@
 {% include "components/nav.njk" %}
 
     <main class="container">
-        <div class="d-flex justify-content-center flex-row">
-            <form>
-                <div class="form-group">
-                 <label for="exampleInputEmail1">Song</label>
-                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter song">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your list with anyone else.</small>
-     </div>
+     <div class="d-flex justify-content-center flex-row">
+            <form action="/profile" method="post">
+                <div class="form-control d-flex mt-2">
+                    <input type="text" name="song" id="song" values="{{ song }}" placeholder="Write a song" required>
+                    <button type="btn btn-outline-success" class="input-group-text">Post</button>
+                </div>
+            </form>
+        </div>
   <div class="form-group">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
         </div>
-                <ul>
+                <ul class="list-group">
             {% for song in songs %}
-                <li>{{ song.songs }} <a href="/profile/{{ song.id }}/delete">Delete</a>
+                <li class="list-group-item">{{ song.songs }} <a href="/profile/{{ song.id }}/delete">Delete</a>
                 </li>
             {% endfor %}
         </ul>

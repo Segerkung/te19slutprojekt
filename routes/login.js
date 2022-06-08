@@ -15,7 +15,7 @@ router.get('/', function (req, res, next) {
 
 router.post('/login', async (req, res, next) => {
   // { "song": "koda post" }
-      const username = req.body.name;
+      const username = req.body.user;
       const password = req.body.password;
 
       await pool.promise()
